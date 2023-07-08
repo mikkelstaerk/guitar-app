@@ -1,6 +1,4 @@
 
-'use client'
-
 import React, {useEffect, useState} from 'react';
 
 import ChordList from "@/app/components/chord-list";
@@ -25,7 +23,6 @@ export default function Page({ params }: { params: { slug: string } }) {
   
   function findChords() {
     if(progression===undefined) {return []}
-   
     const proChords = [];
     progression.chords.forEach(chord => {
       const cho = chords.find(c => c.key==chord.key && c.scale==chord.scale && c.type==type);
@@ -41,7 +38,7 @@ export default function Page({ params }: { params: { slug: string } }) {
   findChords();
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
+      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm">
         <ChordList chords={findChords()} />
       </div>
     </main>
