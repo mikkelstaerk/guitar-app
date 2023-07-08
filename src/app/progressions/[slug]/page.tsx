@@ -1,4 +1,6 @@
 
+'use client'
+
 import React, {useEffect, useState} from 'react';
 
 import ChordList from "@/app/components/chord-list";
