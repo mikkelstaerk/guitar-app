@@ -5,7 +5,7 @@ import {useState} from 'react';
 
 function createScale() {
 
-    var ke=[];
+    const ke:Array<any> = [];
     keys.forEach(element => {
       ke.push(<option value={element.name} key={element.name}>{element.name}</option>)
     });
@@ -16,7 +16,7 @@ export default function ChooseKey({callback}) {
   
     const [selected, setSelected] = useState("A");
 
-    const handleChange = event => {
+    const handleChange = (event:any) => {
         callback(event.target.value);
         setSelected(event.target.value)
       };
