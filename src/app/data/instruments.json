@@ -1,0 +1,27 @@
+ [
+        {
+            "title":"guitar",
+            "frets":22,
+            "strings": [
+                {"key":"E", "number":1},
+                {"key":"B", "number":2},
+                {"key":"G", "number":3},
+                {"key":"D", "number":4},
+                {"key":"A", "number":5},
+                {"key":"E", "number":6}
+            ],
+            "markers":[
+                {"fret":3, "string":4},
+                {"fret":5, "string":4},
+                {"fret":7, "string":4},
+                {"fret":9, "string":4},
+                {"fret":12, "string":3},
+                {"fret":12, "string":5},
+                {"fret":15, "string":4},
+                {"fret":17, "string":4},
+                {"fret":19, "string":4},
+                {"fret":21, "string":4}
+            ]
+        }
+    ]
+  

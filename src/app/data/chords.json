@@ -1,0 +1,242 @@
+[
+        {
+            "type":"triad",
+            "scale":"major",
+            "key":"A",
+            "positions":[
+                {"string":2, "fret": 5, "key":5},
+                {"string":3, "fret": 6, "key":3},
+                {"string":4, "fret": 7, "key":0}
+            ]
+        },
+        {
+            "type":"triad",
+            "scale":"major",
+            "key":"A",
+            "positions":[
+                {"string":2, "fret": 2, "key":3},
+                {"string":3, "fret": 2, "key":0},
+                {"string":4, "fret": 2, "key":5}
+            ]
+        },
+        {
+            "type":"triad",
+            "scale":"major",
+            "key":"A",
+            "positions":[
+                {"string":3, "fret": 9, "key":5},
+                {"string":2, "fret": 10, "key":0},
+                {"string":4, "fret": 11, "key":3}
+            ]
+        },
+        {
+            "type":"triad",
+            "scale":"major",
+            "key":"B",
+            "positions":[
+                {"string":2, "fret": 7, "key":5},
+                {"string":3, "fret": 8, "key":3},
+                {"string":4, "fret": 9, "key":0}
+            ]
+        },
+        {
+            "type":"triad",
+            "scale":"major",
+            "key":"B",
+            "positions":[
+                {"string":2, "fret": 4, "key":3},
+                {"string":3, "fret": 4, "key":0},
+                {"string":4, "fret": 4, "key":5}
+            ]
+        },
+        {
+            "type":"triad",
+            "scale":"major",
+            "key":"B",
+            "positions":[
+                {"string":3, "fret": 11, "key":5},
+                {"string":2, "fret": 12, "key":0},
+                {"string":4, "fret": 13, "key":3}
+            ]
+        },
+        {
+            "type":"triad",
+            "scale":"major",
+            "key":"A#",
+            "positions":[
+                {"string":2, "fret": 6, "key":5},
+                {"string":3, "fret": 7, "key":3},
+                {"string":4, "fret": 8, "key":0}
+            ]
+        },
+        {
+            "type":"triad",
+            "scale":"major",
+            "key":"A#",
+            "positions":[
+                {"string":2, "fret": 3, "key":3},
+                {"string":3, "fret": 3, "key":0},
+                {"string":4, "fret": 3, "key":5}
+            ]
+        },
+        {
+            "type":"triad",
+            "scale":"major",
+            "key":"A#",
+            "positions":[
+                {"string":3, "fret": 10, "key":5},
+                {"string":2, "fret": 11, "key":0},
+                {"string":4, "fret": 12, "key":3}
+            ]
+        },
+        {
+            "type":"triad",
+            "scale":"minor",
+            "key":"A",
+            "positions":[
+                {"string":2, "fret": 1, "key":3},
+                {"string":3, "fret": 2, "key":0},
+                {"string":4, "fret": 2, "key":5}
+            ]
+        },
+        {
+            "type":"triad",
+            "scale":"minor",
+            "key":"A",
+            "positions":[
+                {"string":2, "fret": 5, "key":5},
+                {"string":3, "fret": 5, "key":3},
+                {"string":4, "fret": 7, "key":0}
+            ]
+        },
+        {
+            "type":"triad",
+            "scale":"minor",
+            "key":"A",
+            "positions":[
+                {"string":2, "fret": 10, "key":0},
+                {"string":3, "fret": 9, "key":5},
+                {"string":4, "fret": 10, "key":3}
+            ]
+        },
+        {
+            "type":"triad",
+            "scale":"minor",
+            "key":"B",
+            "positions":[
+                {"string":2, "fret": 3, "key":3},
+                {"string":3, "fret": 4, "key":0},
+                {"string":4, "fret": 4, "key":5}
+            ]
+        },
+        {
+            "type":"triad",
+            "scale":"minor",
+            "key":"B",
+            "positions":[
+                {"string":2, "fret": 7, "key":5},
+                {"string":3, "fret": 7, "key":3},
+                {"string":4, "fret": 9, "key":0}
+            ]
+        },
+        {
+            "type":"triad",
+            "scale":"minor",
+            "key":"B",
+            "positions":[
+                {"string":2, "fret": 12, "key":0},
+                {"string":3, "fret": 11, "key":5},
+                {"string":4, "fret": 12, "key":3}
+            ]
+        },
+        {
+            "type":"triad",
+            "scale":"minor",
+            "key":"A#",
+            "positions":[
+                {"string":2, "fret": 2, "key":3},
+                {"string":3, "fret": 3, "key":0},
+                {"string":4, "fret": 3, "key":5}
+            ]
+        },
+        {
+            "type":"triad",
+            "scale":"minor",
+            "key":"A#",
+            "positions":[
+                {"string":2, "fret": 6, "key":5},
+                {"string":3, "fret": 6, "key":3},
+                {"string":4, "fret": 8, "key":0}
+            ]
+        },
+        {
+            "type":"triad",
+            "scale":"minor",
+            "key":"A#",
+            "positions":[
+                {"string":2, "fret": 11, "key":0},
+                {"string":3, "fret": 10, "key":5},
+                {"string":4, "fret": 11, "key":3}
+            ]
+        },
+        {
+            "type":"triad",
+            "scale":"minor",
+            "key":"C",
+            "positions":[
+                {"string":2, "fret": 8, "key":0},
+                {"string":3, "fret": 7, "key":5},
+                {"string":4, "fret": 8, "key":3}
+            ]
+        },
+        {
+            "type":"triad",
+            "scale":"minor",
+            "key":"C",
+            "positions":[
+                {"string":2, "fret": 11, "key":3},
+                {"string":3, "fret": 12, "key":0},
+                {"string":4, "fret": 12, "key":5}
+            ]
+        },
+        {
+            "type":"triad",
+            "scale":"minor",
+            "key":"C",
+            "positions":[
+                {"string":2, "fret": 3, "key":5},
+                {"string":3, "fret": 3, "key":3},
+                {"string":4, "fret": 5, "key":0}
+            ]
+        },
+        {
+            "type":"triad",
+            "scale":"major",
+            "key":"C",
+            "positions":[
+                {"string":2, "fret": 3, "key":5},
+                {"string":3, "fret": 4, "key":3},
+                {"string":4, "fret": 5, "key":0}
+            ]
+        },
+        {
+            "type":"triad",
+            "scale":"major",
+            "key":"C",
+            "positions":[
+                {"string":2, "fret": 8, "key":0},
+                {"string":3, "fret": 7, "key":5},
+                {"string":4, "fret": 9, "key":3}
+            ]
+        },
+        {
+            "type":"triad",
+            "scale":"major",
+            "key":"C",
+            "positions":[
+                {"string":2, "fret": 12, "key":3},
+                {"string":3, "fret": 12, "key":0},
+                {"string":4, "fret": 12, "key":5}
+            ]
+        }
+    ]
