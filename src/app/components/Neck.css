@@ -68,9 +68,15 @@
   font-weight: bold;
   line-height: 15px;
 }
-.guitar td .marker.root {background-color: darkgreen;}
-.guitar td .marker.third {background-color: green;}
-.guitar td .marker.fifth {background-color: lightseagreen;}
+
+.guitar td .marker.chord.chord0 {background-color: midnightblue;}
+.guitar td .marker.chord.chord1 {background-color: darkolivegreen;}
+.guitar td .marker.chord.chord2 {background-color: saddlebrown;}
+.guitar td .marker.chord.chord3 {background-color: crimson;}
+
+.guitar td .marker.root {opacity: 1;}
+.guitar td .marker.third {opacity: 0.6;}
+.guitar td .marker.fifth {opacity: 0.4;}
 
 .guitar td .marker.root::after {content: "R";}
 .guitar td .marker.third::after {content: "b3";}

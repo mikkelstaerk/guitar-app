@@ -16,11 +16,11 @@ function createColumns(number,chords){
 
   for (let i=0; i<guitar.frets; i++) {
     var marker = guitar.markers.find(m => m.fret-1==i && m.string-1 == number)!==undefined?"marker":undefined;
-    chords.forEach(chord => {
+    chords.forEach((chord, index) => {
       
       var position = chord.positions.find(m => m.fret-1==i && m.string == number);
       if(position !== undefined) {
-        marker = "marker chord " + (position.key==0?"root":position.key==3?"third":"fifth"); 
+        marker = "marker chord "+ ("chord"+index.toString()+" ") + (position.key==0?"root":position.key==3?"third":"fifth"); 
       } 
     });
       td.push(
