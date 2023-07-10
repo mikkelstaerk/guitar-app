@@ -14,7 +14,7 @@ function createScale() {
 
 export default function ChooseKey({callback}) {
   
-    const [selected, setSelected] = useState<Keys>(Keys.A);
+    const [selected, setSelected] = useState();
 
     const handleChange = (event:any) => {
         callback(event.target.value);

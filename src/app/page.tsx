@@ -1,5 +1,5 @@
 
-import ChordFinder from './components/chord-finder'
+import ChordFinder from './components/chord-finder';
 
 export default function Home() {
   return (

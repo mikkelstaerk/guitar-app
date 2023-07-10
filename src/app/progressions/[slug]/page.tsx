@@ -9,9 +9,9 @@ import progressions from "../../data/progressions.json";
 
 export default function Page({ params }: { params: { slug: string } }) {
 
-  const [key, setKey] = useState<Keys>(Keys.A);
-  const [scale, setScale] = useState<Scales>(Scales.Major);
-  const [type, setType] = useState<Types>(Types.Triad);
+  const [key, setKey] = useState('');
+  const [scale, setScale] = useState('');
+  const [type, setType] = useState('');
 
   const pro = progressions.find(p => p.date === params.slug);
   const progression:Progression = pro!==undefined?pro as Progression:null;
