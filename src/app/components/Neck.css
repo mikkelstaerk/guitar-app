@@ -1,4 +1,13 @@
 .guitar {
+  position: relative;
+}
+.guitar h2 {
+  font-size: 90px;
+  opacity: 0.2;
+  position: absolute;
+  left: -80px;
+  top: 50%;
+  margin-top: -20px;
 }
 
 .guitar table {

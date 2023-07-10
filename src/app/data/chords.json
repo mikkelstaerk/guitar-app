@@ -300,4 +300,148 @@
                 {"string":4, "fret": 1, "key":5}
             ]
         }
+
+
+        ,
+        {
+            "type":"triad",
+            "scale":"minor",
+            "key":"D",
+            "positions":[
+                {"string":2, "fret": 9, "key":0},
+                {"string":3, "fret": 8, "key":5},
+                {"string":4, "fret": 9, "key":3}
+            ]
+        },
+        {
+            "type":"triad",
+            "scale":"minor",
+            "key":"D",
+            "positions":[
+                {"string":2, "fret": 12, "key":3},
+                {"string":3, "fret": 13, "key":0},
+                {"string":4, "fret": 13, "key":5}
+            ]
+        },
+        {
+            "type":"triad",
+            "scale":"minor",
+            "key":"D",
+            "positions":[
+                {"string":2, "fret": 0, "key":3},
+                {"string":3, "fret": 1, "key":0},
+                {"string":4, "fret": 1, "key":5}
+            ]
+        },
+        {
+            "type":"triad",
+            "scale":"minor",
+            "key":"D",
+            "positions":[
+                {"string":2, "fret": 4, "key":5},
+                {"string":3, "fret": 4, "key":3},
+                {"string":4, "fret": 6, "key":0}
+            ]
+        },
+        {
+            "type":"triad",
+            "scale":"major",
+            "key":"D",
+            "positions":[
+                {"string":2, "fret": 4, "key":5},
+                {"string":3, "fret": 5, "key":3},
+                {"string":4, "fret": 6, "key":0}
+            ]
+        },
+        {
+            "type":"triad",
+            "scale":"major",
+            "key":"D",
+            "positions":[
+                {"string":2, "fret": 9, "key":0},
+                {"string":3, "fret": 8, "key":5},
+                {"string":4, "fret": 10, "key":3}
+            ]
+        },
+        {
+            "type":"triad",
+            "scale":"major",
+            "key":"D",
+            "positions":[
+                {"string":2, "fret": 13, "key":3},
+                {"string":3, "fret": 13, "key":0},
+                {"string":4, "fret": 13, "key":5}
+            ]
+        },
+        {
+            "type":"triad",
+            "scale":"major",
+            "key":"D",
+            "positions":[
+                {"string":2, "fret": 1, "key":3},
+                {"string":3, "fret": 1, "key":0},
+                {"string":4, "fret": 1, "key":5}
+            ]
+        }
+        ,
+        {
+            "type":"triad",
+            "scale":"minor",
+            "key":"D#",
+            "positions":[
+                {"string":2, "fret": 10, "key":0},
+                {"string":3, "fret": 9, "key":5},
+                {"string":4, "fret": 10, "key":3}
+            ]
+        },
+        {
+            "type":"triad",
+            "scale":"minor",
+            "key":"D#",
+            "positions":[
+                {"string":2, "fret": 1, "key":3},
+                {"string":3, "fret": 2, "key":0},
+                {"string":4, "fret": 2, "key":5}
+            ]
+        },
+        {
+            "type":"triad",
+            "scale":"minor",
+            "key":"D#",
+            "positions":[
+                {"string":2, "fret": 5, "key":5},
+                {"string":3, "fret": 5, "key":3},
+                {"string":4, "fret": 7, "key":0}
+            ]
+        },
+        {
+            "type":"triad",
+            "scale":"major",
+            "key":"D#",
+            "positions":[
+                {"string":2, "fret": 5, "key":5},
+                {"string":3, "fret": 6, "key":3},
+                {"string":4, "fret": 7, "key":0}
+            ]
+        },
+        {
+            "type":"triad",
+            "scale":"major",
+            "key":"D#",
+            "positions":[
+                {"string":2, "fret": 10, "key":0},
+                {"string":3, "fret": 9, "key":5},
+                {"string":4, "fret": 11, "key":3}
+            ]
+        },
+        {
+            "type":"triad",
+            "scale":"major",
+            "key":"D#",
+            "positions":[
+                {"string":2, "fret": 2, "key":3},
+                {"string":3, "fret": 2, "key":0},
+                {"string":4, "fret": 2, "key":5}
+            ]
+        }
     ]

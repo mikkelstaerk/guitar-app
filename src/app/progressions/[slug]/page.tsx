@@ -27,11 +27,13 @@ export default function Page({ params }: { params: { slug: string } }) {
     if(progression===undefined) {return []}
     const proChords = [];
     progression.chords.forEach(chord => {
-      const cho = chords.find(c => c.key==chord.key && c.scale==chord.scale && c.type==type);
-      
-      if(cho!==undefined) {
-        proChords.push(cho);
+      const cho = chords.filter(c => c.key==chord.key && c.scale==chord.scale && c.type==type);
+      if(cho.length>0) {
+        proChords.push(cho)
       }
+      // console.log(cho);
+
+
     });
 
     return proChords;
