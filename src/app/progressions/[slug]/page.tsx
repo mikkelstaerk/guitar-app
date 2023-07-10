@@ -14,7 +14,7 @@ export default function Page({ params }: { params: { slug: string } }) {
   const [type, setType] = useState('triad');
 
   const pro = progressions.find(p => p.date === params.slug);
-  const progression = pro!==undefined?pro:null;
+  const progression:Progression = pro!==undefined?pro as Progression:null;
 
    
   if(progression!=null) {
@@ -31,9 +31,6 @@ export default function Page({ params }: { params: { slug: string } }) {
       if(cho.length>0) {
         proChords.push(cho)
       }
-      // console.log(cho);
-
-
     });
 
     return proChords;

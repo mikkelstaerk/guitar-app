@@ -15,7 +15,7 @@ export default function ChordFinder() {
   const [filteredChords, setChords] = useState([]);
 
   const findChords = () => {
-    const allChords = chords.filter(c => c.key==key && c.scale==scale);
+    const allChords:Chord[] = chords.filter(c => c.key==key && c.scale==scale) as Chord[];
     setChords(allChords);
   }
 

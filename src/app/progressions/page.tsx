@@ -1,11 +1,12 @@
 
 
 import Link from 'next/link';
-import progressions from "../data/progressions.json";
+import pro from "../data/progressions.json";
 
 export default function Page() {
 
   const rows = [];
+  const progressions:Progression[] = pro as Progression[];
 
   progressions.forEach(element => {
 

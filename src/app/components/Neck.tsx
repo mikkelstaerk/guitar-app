@@ -3,13 +3,13 @@
 import './Neck.css';
 import instruments from '../data/instruments.json';
 
-var guitar = instruments[0];
+var guitar:Instrument = instruments[0] as Instrument;
 
-function createMarker(marker) {
+function createMarker(marker:string) {
   return <div className={marker}></div>
 }
 
-function createColumns(number,chords){
+function createColumns(number:number,chords:Array<Chord>){
 
 
   var td = [];
