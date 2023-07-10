@@ -9,9 +9,9 @@ import progressions from "../../data/progressions.json";
 
 export default function Page({ params }: { params: { slug: string } }) {
 
-  const [key, setKey] = useState('');
-  const [scale, setScale] = useState('');
-  const [type, setType] = useState('triad');
+  const [key, setKey] = useState<Keys>(Keys.A);
+  const [scale, setScale] = useState<Scales>(Scales.Major);
+  const [type, setType] = useState<Types>(Types.Triad);
 
   const pro = progressions.find(p => p.date === params.slug);
   const progression:Progression = pro!==undefined?pro as Progression:null;
@@ -29,7 +29,7 @@ export default function Page({ params }: { params: { slug: string } }) {
     progression.chords.forEach(chord => {
       const cho = chords.filter(c => c.key==chord.key && c.scale==chord.scale && c.type==type);
       if(cho.length>0) {
-        proChords.push(cho)
+        proChords.push(cho);
       }
     });
 

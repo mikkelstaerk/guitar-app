@@ -15,7 +15,7 @@ function createColumns(number:number,chords:Array<Chord>){
   var td = [];
 
   for (let i=0; i<guitar.frets; i++) {
-    var marker = guitar.markers.find(m => m.fret-1==i && m.string-1 == number)!==undefined?"marker":undefined;
+    var marker:string = guitar.markers.find(m => m.fret-1==i && m.string-1 == number)!==undefined?"marker":undefined;
     chords.forEach((chord, index) => {
       
       var position = chord.positions.find(m => m.fret-1==i && m.string == number);

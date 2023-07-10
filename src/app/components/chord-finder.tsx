@@ -10,9 +10,9 @@ import ChordList from './chord-list';
 
 
 export default function ChordFinder() {
-  const [key, setKey] = useState('');
-  const [scale, setScale] = useState('');
-  const [filteredChords, setChords] = useState([]);
+  const [key, setKey] = useState<Keys>(Keys.A);
+  const [scale, setScale] = useState<Scales>(Scales.Major);
+  const [filteredChords, setChords] = useState<Chord[]>([]);
 
   const findChords = () => {
     const allChords:Chord[] = chords.filter(c => c.key==key && c.scale==scale) as Chord[];
