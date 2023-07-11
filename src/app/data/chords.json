@@ -181,32 +181,12 @@
         },
         {
             "type":"triad",
-            "scale":"minor",
+            "scale":"major",
             "key":"C",
             "positions":[
-                {"string":2, "fret": 8, "key":0},
-                {"string":3, "fret": 7, "key":5},
-                {"string":4, "fret": 8, "key":3}
-            ]
-        },
-        {
-            "type":"triad",
-            "scale":"minor",
-            "key":"C",
-            "positions":[
-                {"string":2, "fret": 11, "key":3},
-                {"string":3, "fret": 12, "key":0},
-                {"string":4, "fret": 12, "key":5}
-            ]
-        },
-        {
-            "type":"triad",
-            "scale":"minor",
-            "key":"C",
-            "positions":[
-                {"string":2, "fret": 3, "key":5},
-                {"string":3, "fret": 3, "key":3},
-                {"string":4, "fret": 5, "key":0}
+                {"string":2, "fret": 8, "key":5},
+                {"string":3, "fret": 9, "key":3},
+                {"string":4, "fret": 10, "key":0}
             ]
         },
         {
@@ -214,9 +194,9 @@
             "scale":"major",
             "key":"C",
             "positions":[
-                {"string":2, "fret": 3, "key":5},
-                {"string":3, "fret": 4, "key":3},
-                {"string":4, "fret": 5, "key":0}
+                {"string":2, "fret": 5, "key":3},
+                {"string":3, "fret": 5, "key":0},
+                {"string":4, "fret": 5, "key":5}
             ]
         },
         {
@@ -224,9 +204,9 @@
             "scale":"major",
             "key":"C",
             "positions":[
-                {"string":2, "fret": 8, "key":0},
-                {"string":3, "fret": 7, "key":5},
-                {"string":4, "fret": 9, "key":3}
+                {"string":3, "fret": 0, "key":5},
+                {"string":2, "fret": 1, "key":0},
+                {"string":4, "fret": 2, "key":3}
             ]
         },
         {
@@ -234,40 +214,9 @@
             "scale":"major",
             "key":"C",
             "positions":[
-                {"string":2, "fret": 12, "key":3},
-                {"string":3, "fret": 12, "key":0},
-                {"string":4, "fret": 12, "key":5}
-            ]
-        }
-        ,
-        {
-            "type":"triad",
-            "scale":"minor",
-            "key":"C#",
-            "positions":[
-                {"string":2, "fret": 9, "key":0},
-                {"string":3, "fret": 8, "key":5},
-                {"string":4, "fret": 9, "key":3}
-            ]
-        },
-        {
-            "type":"triad",
-            "scale":"minor",
-            "key":"C#",
-            "positions":[
-                {"string":2, "fret": 0, "key":3},
-                {"string":3, "fret": 1, "key":0},
-                {"string":4, "fret": 1, "key":5}
-            ]
-        },
-        {
-            "type":"triad",
-            "scale":"minor",
-            "key":"C#",
-            "positions":[
-                {"string":2, "fret": 4, "key":5},
-                {"string":3, "fret": 4, "key":3},
-                {"string":4, "fret": 6, "key":0}
+                {"string":3, "fret": 12, "key":5},
+                {"string":2, "fret": 13, "key":0},
+                {"string":4, "fret": 14, "key":3}
             ]
         },
         {
@@ -275,9 +224,9 @@
             "scale":"major",
             "key":"C#",
             "positions":[
-                {"string":2, "fret": 4, "key":5},
-                {"string":3, "fret": 5, "key":3},
-                {"string":4, "fret": 6, "key":0}
+                {"string":2, "fret": 9, "key":5},
+                {"string":3, "fret": 10, "key":3},
+                {"string":4, "fret": 11, "key":0}
             ]
         },
         {
@@ -285,9 +234,9 @@
             "scale":"major",
             "key":"C#",
             "positions":[
-                {"string":2, "fret": 9, "key":0},
-                {"string":3, "fret": 8, "key":5},
-                {"string":4, "fret": 10, "key":3}
+                {"string":2, "fret": 6, "key":3},
+                {"string":3, "fret": 6, "key":0},
+                {"string":4, "fret": 6, "key":5}
             ]
         },
         {
@@ -295,49 +244,99 @@
             "scale":"major",
             "key":"C#",
             "positions":[
-                {"string":2, "fret": 1, "key":3},
-                {"string":3, "fret": 1, "key":0},
-                {"string":4, "fret": 1, "key":5}
+                {"string":3, "fret": 1, "key":5},
+                {"string":2, "fret": 2, "key":0},
+                {"string":4, "fret": 3, "key":3}
+            ]
+        },
+        {
+            "type":"triad",
+            "scale":"major",
+            "key":"C#",
+            "positions":[
+                {"string":3, "fret": 13, "key":5},
+                {"string":2, "fret": 14, "key":0},
+                {"string":4, "fret": 15, "key":3}
             ]
         },
         {
             "type":"triad",
             "scale":"minor",
-            "key":"D",
+            "key":"C",
             "positions":[
-                {"string":2, "fret": 9, "key":0},
-                {"string":3, "fret": 8, "key":5},
-                {"string":4, "fret": 9, "key":3}
+                {"string":2, "fret": 4, "key":3},
+                {"string":3, "fret": 5, "key":0},
+                {"string":4, "fret": 5, "key":5}
             ]
         },
         {
             "type":"triad",
             "scale":"minor",
-            "key":"D",
+            "key":"C",
             "positions":[
-                {"string":2, "fret": 12, "key":3},
-                {"string":3, "fret": 13, "key":0},
-                {"string":4, "fret": 13, "key":5}
+                {"string":2, "fret": 8, "key":5},
+                {"string":3, "fret": 8, "key":3},
+                {"string":4, "fret": 10, "key":0}
             ]
         },
         {
             "type":"triad",
             "scale":"minor",
-            "key":"D",
+            "key":"C",
             "positions":[
-                {"string":2, "fret": 0, "key":3},
-                {"string":3, "fret": 1, "key":0},
-                {"string":4, "fret": 1, "key":5}
+                {"string":2, "fret": 13, "key":0},
+                {"string":3, "fret": 12, "key":5},
+                {"string":4, "fret": 13, "key":3}
             ]
         },
         {
             "type":"triad",
             "scale":"minor",
-            "key":"D",
+            "key":"C",
             "positions":[
-                {"string":2, "fret": 4, "key":5},
-                {"string":3, "fret": 4, "key":3},
-                {"string":4, "fret": 6, "key":0}
+                {"string":2, "fret": 1, "key":0},
+                {"string":3, "fret": 0, "key":5},
+                {"string":4, "fret": 1, "key":3}
+            ]
+        },
+        {
+            "type":"triad",
+            "scale":"minor",
+            "key":"C#",
+            "positions":[
+                {"string":2, "fret": 5, "key":3},
+                {"string":3, "fret": 6, "key":0},
+                {"string":4, "fret": 6, "key":5}
+            ]
+        },
+        {
+            "type":"triad",
+            "scale":"minor",
+            "key":"C#",
+            "positions":[
+                {"string":2, "fret": 9, "key":5},
+                {"string":3, "fret": 9, "key":3},
+                {"string":4, "fret": 11, "key":0}
+            ]
+        },
+        {
+            "type":"triad",
+            "scale":"minor",
+            "key":"C#",
+            "positions":[
+                {"string":2, "fret": 14, "key":0},
+                {"string":3, "fret": 13, "key":5},
+                {"string":4, "fret": 14, "key":3}
+            ]
+        },
+        {
+            "type":"triad",
+            "scale":"minor",
+            "key":"C#",
+            "positions":[
+                {"string":2, "fret": 2, "key":0},
+                {"string":3, "fret": 1, "key":5},
+                {"string":4, "fret": 2, "key":3}
             ]
         },
         {
@@ -345,9 +344,9 @@
             "scale":"major",
             "key":"D",
             "positions":[
-                {"string":2, "fret": 4, "key":5},
-                {"string":3, "fret": 5, "key":3},
-                {"string":4, "fret": 6, "key":0}
+                {"string":2, "fret": 10, "key":5},
+                {"string":3, "fret": 11, "key":3},
+                {"string":4, "fret": 12, "key":0}
             ]
         },
         {
@@ -355,9 +354,9 @@
             "scale":"major",
             "key":"D",
             "positions":[
-                {"string":2, "fret": 9, "key":0},
-                {"string":3, "fret": 8, "key":5},
-                {"string":4, "fret": 10, "key":3}
+                {"string":2, "fret": 7, "key":3},
+                {"string":3, "fret": 7, "key":0},
+                {"string":4, "fret": 7, "key":5}
             ]
         },
         {
@@ -365,50 +364,39 @@
             "scale":"major",
             "key":"D",
             "positions":[
-                {"string":2, "fret": 13, "key":3},
-                {"string":3, "fret": 13, "key":0},
-                {"string":4, "fret": 13, "key":5}
+                {"string":3, "fret": 2, "key":5},
+                {"string":2, "fret": 3, "key":0},
+                {"string":4, "fret": 4, "key":3}
             ]
         },
         {
             "type":"triad",
-            "scale":"major",
+            "scale":"minor",
             "key":"D",
             "positions":[
-                {"string":2, "fret": 1, "key":3},
-                {"string":3, "fret": 1, "key":0},
-                {"string":4, "fret": 1, "key":5}
-            ]
-        }
-        ,
-        {
-            "type":"triad",
-            "scale":"minor",
-            "key":"D#",
-            "positions":[
-                {"string":2, "fret": 10, "key":0},
-                {"string":3, "fret": 9, "key":5},
-                {"string":4, "fret": 10, "key":3}
+                {"string":2, "fret": 6, "key":3},
+                {"string":3, "fret": 7, "key":0},
+                {"string":4, "fret": 7, "key":5}
             ]
         },
         {
             "type":"triad",
             "scale":"minor",
-            "key":"D#",
+            "key":"D",
             "positions":[
-                {"string":2, "fret": 1, "key":3},
-                {"string":3, "fret": 2, "key":0},
-                {"string":4, "fret": 2, "key":5}
+                {"string":2, "fret": 10, "key":5},
+                {"string":3, "fret": 10, "key":3},
+                {"string":4, "fret": 12, "key":0}
             ]
         },
         {
             "type":"triad",
             "scale":"minor",
-            "key":"D#",
+            "key":"D",
             "positions":[
-                {"string":2, "fret": 5, "key":5},
-                {"string":3, "fret": 5, "key":3},
-                {"string":4, "fret": 7, "key":0}
+                {"string":2, "fret": 3, "key":0},
+                {"string":3, "fret": 2, "key":5},
+                {"string":4, "fret": 3, "key":3}
             ]
         },
         {
@@ -416,9 +404,9 @@
             "scale":"major",
             "key":"D#",
             "positions":[
-                {"string":2, "fret": 5, "key":5},
-                {"string":3, "fret": 6, "key":3},
-                {"string":4, "fret": 7, "key":0}
+                {"string":2, "fret": 11, "key":5},
+                {"string":3, "fret": 12, "key":3},
+                {"string":4, "fret": 13, "key":0}
             ]
         },
         {
@@ -426,9 +414,9 @@
             "scale":"major",
             "key":"D#",
             "positions":[
-                {"string":2, "fret": 10, "key":0},
-                {"string":3, "fret": 9, "key":5},
-                {"string":4, "fret": 11, "key":3}
+                {"string":2, "fret": 8, "key":3},
+                {"string":3, "fret": 8, "key":0},
+                {"string":4, "fret": 8, "key":5}
             ]
         },
         {
@@ -436,153 +424,39 @@
             "scale":"major",
             "key":"D#",
             "positions":[
-                {"string":2, "fret": 2, "key":3},
-                {"string":3, "fret": 2, "key":0},
-                {"string":4, "fret": 2, "key":5}
-            ]
-        }
-
-
-        ,
-        {
-            "type":"triad",
-            "scale":"minor",
-            "key":"E",
-            "positions":[
-                {"string":2, "fret": 10, "key":0},
-                {"string":3, "fret": 9, "key":5},
-                {"string":4, "fret": 10, "key":3}
+                {"string":3, "fret": 3, "key":5},
+                {"string":2, "fret": 4, "key":0},
+                {"string":4, "fret": 5, "key":3}
             ]
         },
         {
             "type":"triad",
             "scale":"minor",
-            "key":"E",
-            "positions":[
-                {"string":2, "fret": 13, "key":3},
-                {"string":3, "fret": 14, "key":0},
-                {"string":4, "fret": 14, "key":5}
-            ]
-        },
-        {
-            "type":"triad",
-            "scale":"minor",
-            "key":"E",
-            "positions":[
-                {"string":2, "fret": 1, "key":3},
-                {"string":3, "fret": 2, "key":0},
-                {"string":4, "fret": 2, "key":5}
-            ]
-        },
-        {
-            "type":"triad",
-            "scale":"minor",
-            "key":"E",
-            "positions":[
-                {"string":2, "fret": 4, "key":5},
-                {"string":3, "fret": 4, "key":3},
-                {"string":4, "fret": 6, "key":0}
-            ]
-        },
-        {
-            "type":"triad",
-            "scale":"major",
-            "key":"E",
-            "positions":[
-                {"string":2, "fret": 4, "key":5},
-                {"string":3, "fret": 5, "key":3},
-                {"string":4, "fret": 6, "key":0}
-            ]
-        },
-        {
-            "type":"triad",
-            "scale":"major",
-            "key":"E",
-            "positions":[
-                {"string":2, "fret": 9, "key":0},
-                {"string":3, "fret": 8, "key":5},
-                {"string":4, "fret": 10, "key":3}
-            ]
-        },
-        {
-            "type":"triad",
-            "scale":"major",
-            "key":"E",
-            "positions":[
-                {"string":2, "fret": 13, "key":3},
-                {"string":3, "fret": 13, "key":0},
-                {"string":4, "fret": 13, "key":5}
-            ]
-        },
-        {
-            "type":"triad",
-            "scale":"major",
-            "key":"E",
-            "positions":[
-                {"string":2, "fret": 1, "key":3},
-                {"string":3, "fret": 1, "key":0},
-                {"string":4, "fret": 1, "key":5}
-            ]
-        }
-        ,
-        {
-            "type":"triad",
-            "scale":"minor",
-            "key":"E#",
-            "positions":[
-                {"string":2, "fret": 10, "key":0},
-                {"string":3, "fret": 9, "key":5},
-                {"string":4, "fret": 10, "key":3}
-            ]
-        },
-        {
-            "type":"triad",
-            "scale":"minor",
-            "key":"E#",
-            "positions":[
-                {"string":2, "fret": 1, "key":3},
-                {"string":3, "fret": 2, "key":0},
-                {"string":4, "fret": 2, "key":5}
-            ]
-        },
-        {
-            "type":"triad",
-            "scale":"minor",
-            "key":"E#",
-            "positions":[
-                {"string":2, "fret": 5, "key":5},
-                {"string":3, "fret": 5, "key":3},
-                {"string":4, "fret": 7, "key":0}
-            ]
-        },
-        {
-            "type":"triad",
-            "scale":"major",
-            "key":"E#",
-            "positions":[
-                {"string":2, "fret": 5, "key":5},
-                {"string":3, "fret": 6, "key":3},
-                {"string":4, "fret": 7, "key":0}
-            ]
-        },
-        {
-            "type":"triad",
-            "scale":"major",
             "key":"D#",
             "positions":[
-                {"string":2, "fret": 10, "key":0},
-                {"string":3, "fret": 9, "key":5},
-                {"string":4, "fret": 11, "key":3}
+                {"string":2, "fret": 7, "key":3},
+                {"string":3, "fret": 8, "key":0},
+                {"string":4, "fret": 8, "key":5}
             ]
         },
         {
             "type":"triad",
-            "scale":"major",
+            "scale":"minor",
             "key":"D#",
             "positions":[
-                {"string":2, "fret": 2, "key":3},
-                {"string":3, "fret": 2, "key":0},
-                {"string":4, "fret": 2, "key":5}
+                {"string":2, "fret": 11, "key":5},
+                {"string":3, "fret": 11, "key":3},
+                {"string":4, "fret": 13, "key":0}
+            ]
+        },
+        {
+            "type":"triad",
+            "scale":"minor",
+            "key":"D#",
+            "positions":[
+                {"string":2, "fret": 4, "key":0},
+                {"string":3, "fret": 3, "key":5},
+                {"string":4, "fret": 4, "key":3}
             ]
         }
     ]

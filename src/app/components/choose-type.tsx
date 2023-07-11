@@ -28,7 +28,6 @@ export default function ChooseType({callback}) {
         <option key="none" value="">All</option>
         {createScale()}
         </select>
-        
       </div>
     )
   }

@@ -1,11 +1,22 @@
  [
-        {
-            "date":"2023-07-07",
-            "chords":[
-                {"key":"E", "scale":"minor"},
-                {"key":"D", "scale":"major"},
-                {"key":"C", "scale":"major"},
-                {"key":"D", "scale":"major"}
-            ] 
-        }
+    {
+        "date":"2023-07-07",
+        "chords":[
+            {"key":"E", "scale":"minor"},
+            {"key":"D", "scale":"major"},
+            {"key":"C", "scale":"major"},
+            {"key":"D", "scale":"major"}
+        ] 
+    },
+    
+    {
+        "date":"2023-07-08",
+        "chords":[
+            {"key":"D", "scale":"major"},
+            {"key":"D#", "scale":"major"},
+            {"key":"D", "scale":"minor"},
+            {"key":"D#", "scale":"minor"}
+        ] 
+    }
+    
    ]
