@@ -12,10 +12,10 @@
     {
         "date":"2023-07-08",
         "chords":[
-            {"key":"D", "scale":"major"},
             {"key":"D#", "scale":"major"},
-            {"key":"D", "scale":"minor"},
-            {"key":"D#", "scale":"minor"}
+            {"key":"E", "scale":"major"},
+            {"key":"D#", "scale":"minor"},
+            {"key":"E", "scale":"minor"}
         ] 
     }
     
