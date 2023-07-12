@@ -12,7 +12,7 @@ export default function Page({ params }: { params: { slug: string } }) {
 
   const [key, setKey] = useState('');
   const [scale, setScale] = useState('');
-  const [type, setType] = useState('triad');
+  const [type, setType] = useState('chord');
 
   const pro = progressions.find(p => p.date === params.slug);
   const progression:Progression = pro!==undefined?pro as Progression:null;

@@ -893,7 +893,7 @@
             "scale":"major",
             "key":"G", 
             "positions":[
-                {"string":1, "fret": 2, "key":0},
+                {"string":1, "fret": 3, "key":0},
                 {"string":2, "fret": 0, "key":5},
                 {"string":3, "fret": 0, "key":0},
                 {"string":4, "fret": 0, "key":3},
