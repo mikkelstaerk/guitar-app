@@ -9,25 +9,35 @@ function createMarker(marker:string) {
   return <div className={marker}></div>
 }
 
-function createColumns(number:number,chords:Array<Chord>){
+function createColumns(stringNumber:number,chords:Array<Chord>){
 
 
   var td = [];
+  let touched = false;
 
   for (let i=0; i<guitar.frets; i++) {
-    var marker:string = guitar.markers.find(m => m.fret-1==i && m.string-1 == number)!==undefined?"marker":undefined;
+    var marker:string = guitar.markers.find(m => m.fret-1==i && m.string-1 == stringNumber)!==undefined?"marker":undefined;
     chords.forEach((chord, index) => {
       
-      var position = chord.positions.find(m => m.fret-1==i && m.string == number);
+      if(i==0) {
+        if(chord.positions.find(m => m.fret==0 && m.string == stringNumber)) {
+          touched = true;
+        }
+      }
+
+      var position = chord.positions.find(m => m.fret-1==i && m.string == stringNumber);
       if(position !== undefined) {
         marker = "marker chord "+ ("chord"+index.toString()+" ") + (position.key==0?"root":position.key==3?"third":"fifth"); 
+        touched = true;
       } 
     });
       td.push(
-          <td key={"pos-"+i+"-"+number} className={"fret"+(i+1).toString()}>{marker!==undefined ? createMarker(marker):""}</td>
+          <td key={"pos-"+i+"-"+stringNumber} className={"fret"+(i+1).toString()}>{marker!==undefined ? createMarker(marker):""}</td>
       )
   }
-  return td;
+
+
+  return {columns: td, touched:touched};
 }
 
 function createNumbers() {
@@ -47,12 +57,16 @@ export default function Neck(props) {
   }
 
   const title = chords[0]?.key + (chords[0]?.scale==='minor'?"m":"");
+  const subtitle = chords[0]?.type;
 
   const items = [];
         for (const guitarString of guitar.strings) {
-            items.push(<tr className={guitarString.number==6?"last":""} key={guitarString.number}>
+            const columns = createColumns(guitarString.number, chords);
+            const styles = (guitarString.number==6?"last":"") + (columns.touched===true?" touched":"");
+
+            items.push(<tr className={styles} key={guitarString.number}>
               <td className='key'><p>{guitarString.key}</p></td>
-              {createColumns(guitarString.number, chords)}
+              {columns.columns}
             </tr>)
         }
 
@@ -63,6 +77,7 @@ export default function Neck(props) {
       <div className="instrument guitar">
         <div className="bar"></div>
         <h2>{title}</h2>
+        <h3>{subtitle}</h3>
         <table>
           <tbody>{items}</tbody>
         </table>

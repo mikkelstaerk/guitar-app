@@ -33,9 +33,11 @@ export default function ChordFinder() {
 
   return (
     <div>
+    <div className="w-full max-w-5xl items-center">
+      <ChooseKey callback={updateKey} />
+      <ChooseScale callback={updateScale} />
+    </div>
         <div className="w-full max-w-5xl items-center">
-          <ChooseKey callback={updateKey} />
-          <ChooseScale callback={updateScale} />
           {key} - {scale}
         </div>
 

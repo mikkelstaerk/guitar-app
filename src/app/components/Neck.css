@@ -10,6 +10,16 @@
   top: 50%;
   margin-top: -20px;
 }
+.guitar h3 {
+  font-size: 16px;
+  opacity: 0.4;
+  font-weight: bold;;
+  position: absolute;
+  left: -80px;
+  top: 50%;
+  margin-top: 20px;
+  text-transform: uppercase;
+}
 
 .guitar table {
   border-collapse: collapse;
@@ -19,13 +29,17 @@
 
 .guitar td {
   height:25px;
-  border: 1px solid black;
+  border: 1px dashed #CCC;
   position: relative;
 }
 .guitar .last td {
-  border: none !important;
+  border: none;
   height: 1px;
 }
+ .guitar tr.touched td {
+  border-top: 1px solid black;
+  /* height:23px; */
+} 
 .guitar .numbers td {
   border: none !important;
   text-align: center;
@@ -33,7 +47,7 @@
 }
 
 .guitar td.key {
-  border: none;
+  border: none !important;
   border-right: 6px solid black;
   width:10%;
   padding-left:25px;

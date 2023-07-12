@@ -807,16 +807,16 @@
             "scale":"minor",
             "key":"A",
             "positions":[
-                {"string":1, "fret": 0, "key":0},
-                {"string":2, "fret": 1, "key":0},
+                {"string":1, "fret": 0, "key":5},
+                {"string":2, "fret": 1, "key":3},
                 {"string":3, "fret": 2, "key":0},
-                {"string":4, "fret": 2, "key":0},
+                {"string":4, "fret": 2, "key":5},
                 {"string":5, "fret": 0, "key":0}
             ]
         },
         {
             "type":"chord",
-            "scale":"minor",
+            "scale":"major",
             "key":"A",
             "positions":[
                 {"string":1, "fret": 0, "key":0},
