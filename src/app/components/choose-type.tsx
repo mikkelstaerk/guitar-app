@@ -1,5 +1,4 @@
 'use client'
-import Types from '../interfaces/types';
 import {useState} from 'react';
 
 function createTypes(): any[] {
