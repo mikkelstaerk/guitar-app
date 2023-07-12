@@ -5,7 +5,7 @@ import React, {useEffect, useState} from 'react';
 import chords from '../data/chords.json';
 
 import ChooseKey from "./choose-key";
-import ChooseType from './choose-type';
+import ChooseScale from './choose-scale';
 import ChordList from './chord-list';
 
 
@@ -35,7 +35,7 @@ export default function ChordFinder() {
     <div>
         <div className="w-full max-w-5xl items-center">
           <ChooseKey callback={updateKey} />
-          <ChooseType callback={updateScale} />
+          <ChooseScale callback={updateScale} />
           {key} - {scale}
         </div>
 

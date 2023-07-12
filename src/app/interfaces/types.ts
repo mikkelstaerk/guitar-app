@@ -1,4 +1,5 @@
 enum Types {
-    FullChord = "chord",
+    BarChord = "barchord",
+    Chord = "chord",
     Triad = "triad",
 }

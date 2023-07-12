@@ -6,6 +6,7 @@ import React, {useEffect, useState} from 'react';
 import ChordList from "@/app/components/chord-list";
 import chords from "../../data/chords.json";
 import progressions from "../../data/progressions.json";
+import ChooseType from '@/app/components/choose-type';
 
 export default function Page({ params }: { params: { slug: string } }) {
 
@@ -20,6 +21,10 @@ export default function Page({ params }: { params: { slug: string } }) {
   if(progression!=null) {
     // setKey(progression.key);
     // setScale(progression.scale);
+  }
+
+  const updateType = (value) => {
+    setType(value)
   }
 
   
@@ -41,6 +46,7 @@ export default function Page({ params }: { params: { slug: string } }) {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm">
+        <ChooseType callback={updateType} />
         <ChordList chords={findChords()} />
       </div>
     </main>

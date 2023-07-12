@@ -5,7 +5,7 @@ import Neck from './Neck';
 function listChords(chords:Chord[]){
   var td = [];
   for (let i=0; i<chords.length; i++) {
-    td.push(<Neck chords={[chords[i]]} />);
+    td.push(<Neck key={[i]} chords={[chords[i]]} />);
   }
   return td;
 }

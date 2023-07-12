@@ -33,7 +33,7 @@ function createColumns(number:number,chords:Array<Chord>){
 function createNumbers() {
   var td = [];
   for (let i=0; i<guitar.frets; i++) {
-    td.push(<td>{i+1}</td>);
+    td.push(<td key={"numbers-"+i}>{i+1}</td>);
   }
   return td;
 }
@@ -56,7 +56,7 @@ export default function Neck(props) {
             </tr>)
         }
 
-  items.push(<tr className='numbers'><td></td>{createNumbers()}</tr>);
+  items.push(<tr key="numbers" className='numbers'><td key="number-fill"></td>{createNumbers()}</tr>);
   
   
     return (
