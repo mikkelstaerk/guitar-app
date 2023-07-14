@@ -27,7 +27,8 @@ function createColumns(stringNumber:number,chords:Array<Chord>){
 
       var position = chord.positions.find(m => m.fret-1==i && m.string == stringNumber);
       if(position !== undefined) {
-        marker = "marker chord "+ ("chord"+index.toString()+" ") + (position.key==0?"root":position.key==3?"third":"fifth"); 
+        marker = "marker chord "+ ("chord"+index.toString()+" ") + (position.key==0?"root":position.key==3?"third":"fifth");
+        console.log() 
         touched = true;
       } 
     });
@@ -56,8 +57,8 @@ export default function Neck(props) {
     }
   }
 
-  const title = chords[0]?.key + (chords[0]?.scale==='minor'?"m":"");
-  const subtitle = chords[0]?.type;
+  const title = chords[0]?.key.name + (chords[0]?.scale.short==='minor'?"m":"");
+  const subtitle = chords[0]?.type.short;
 
   const items = [];
         for (const guitarString of guitar.strings) {
