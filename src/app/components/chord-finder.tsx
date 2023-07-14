@@ -2,7 +2,6 @@
 
 import React, {useEffect, useState} from 'react';
 
-// import chords from '../data/chords.json';
 
 import ChooseKey from "./choose-key";
 import ChooseScale from './choose-scale';
@@ -13,7 +12,6 @@ import ChooseType from './choose-type';
 export default  function ChordFinder(props) {
 
   const chords = props.data.chordCollection.items;
-  // console.log("XXX ", chords);
 
   const [key, setKey] = useState('');
   const [scale, setScale] = useState('');
@@ -30,7 +28,6 @@ export default  function ChordFinder(props) {
 
   useEffect(() => {
     findChords();
-
   }, [key,scale, type]);
 
   const updateKey = (value) => {
@@ -50,11 +47,8 @@ export default  function ChordFinder(props) {
       <ChooseScale scales={props.data.scaleCollection.items} callback={updateScale} />
       <ChooseType callback={updateType} />
     </div>
-        <div className="w-full max-w-5xl items-center">
-          {key} - {scale}
-        </div>
 
-        <div className="w-full max-w-5xl items-center">
+        <div className="w-full max-w-5xl items-center mt-10">
           <ChordList chords={filteredChords} />
         </div>
     </div>
