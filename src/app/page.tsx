@@ -1,10 +1,10 @@
 
 import ChordFinder from './components/chord-finder';
-import getData from './service/contentful';
+import contentful from './service/contentful';
 
 export default async function Home() {
 
-const cfData = await getData();
+const cfData = await contentful.getData();
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">

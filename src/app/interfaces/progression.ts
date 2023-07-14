@@ -1,5 +1,6 @@
 
 interface Progression {
+  title:string;
     date:string;
-    chords:Array<ChordType>;
+    chordsCollection:any;
   }

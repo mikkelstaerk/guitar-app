@@ -1,30 +1,32 @@
-
-
 import Link from 'next/link';
-import pro from "../data/progressions.json";
+import contentful from '../service/contentful';
+import moment from 'moment';
 
-export default function Page() {
+export default async function Page() {
 
   const rows = [];
-  const progressions:Progression[] = pro as Progression[];
+  const proData = await contentful.getProgressions();
+  const progressions:Progression[] = proData.progressionCollection.items as Progression[];
 
   progressions.forEach(element => {
 
     const chords=[];
-    element.chords.forEach(cho=> {
-      chords.push(<span> {cho.key}{cho.scale=='minor'?"m":""} </span>);
+    element.chordsCollection.items.forEach(cho=> {
+      chords.push(<span> {cho.key.name}{cho.scale.short=='minor'?"m":""} </span>);
     });
+
+    const date = moment(element.date);   
 
     rows.push(
       <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
           <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-             <Link href={"/progressions/"+element.date}>{element.date}</Link> 
+             <Link href={"/progressions/"+encodeURIComponent(element.title)}>{element.title}</Link> 
           </th>
           <td className="px-6 py-4">
-              {element.chords[0]?.key}
+              {element.key.key.name}
           </td>
           <td className="px-6 py-4">
-              {element.chords[0]?.scale}
+              {element.key.scale.name}
           </td>
           <td className="px-6 py-4">
               {chords}

@@ -5,14 +5,52 @@ const spaceId = 'o63tlfz9jbab';
 const environment = 'master';
 const token = 'rbAnrJsx1CaBEtXh4vIUehHfDnxTuvbD6pKhWgUBELc';
 
-export default async function getData() {
-    const client = new ApolloClient({
-        uri: `${baseUrl}/spaces/${spaceId}/environments/${environment}`,
-        headers: {
-            authorization: `Bearer ${token}`,
-        },
-        cache: new InMemoryCache(),
-      });
+const client = new ApolloClient({
+  uri: `${baseUrl}/spaces/${spaceId}/environments/${environment}`,
+  headers: {
+      authorization: `Bearer ${token}`,
+  },
+  cache: new InMemoryCache(),
+});
+
+async function getProgressions() {
+      const res = await client.query({
+    query: gql`
+    query {
+      progressionCollection(order:[date_DESC]) {
+          items {
+              title
+              date
+              key {
+                  key {
+                      name
+                  }
+                  scale {
+                      name
+                      short
+                  }
+              }
+              chordsCollection(limit:20) {
+                  items {
+                      key {
+                          name
+                      }
+                      scale {
+                          name
+                          short
+                      }
+                  }
+              }
+          }
+      }
+  }`,
+  }); 
+  return res.data;
+
+
+}
+
+async function getData() {
       const res = await client.query({
     query: gql`
     query {
@@ -56,3 +94,5 @@ export default async function getData() {
   return res.data;
 
 }
+
+export default {getData, getProgressions};

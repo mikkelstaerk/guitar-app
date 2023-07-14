@@ -1,48 +1,55 @@
 
 'use client'
 
-import React, {useEffect, useState} from 'react';
+import React, {useLayoutEffect, useState} from 'react';
 
 import ChordList from "@/app/components/chord-list";
-// import chords from "../../data/chords.json";
-import progressions from "../../data/progressions.json";
 import ChooseType from '@/app/components/choose-type';
-import getData from '@/app/service/contentful';
+import contentful from '@/app/service/contentful';
 
 export default function Page({ params }: { params: { slug: string } }) {
   
     const [key, setKey] = useState('');
     const [scale, setScale] = useState('');
-    const [type, setType] = useState('chord');
-    const [chordsselected, setChords] = useState([]);
+    const [type, setType] = useState('');
+    let [chordsselected, setChords] = useState([]);
+
+    useLayoutEffect(() => {
+    }, [key, type,scale]);
+
+    let progression:Progression = null;
 
   let chords = [];
-  getData().then(data => {
+  contentful.getData().then(data => {
     chords = data.chordCollection.items;
-    findChords();
+    contentful.getProgressions().then(progres => {
+      progression = progres.progressionCollection.items.find(p => encodeURIComponent(p.title)==params.slug);
+      // findChords();
+    });
   });
-
-  const pro = progressions.find(p => p.date === params.slug);
-  const progression:Progression = pro!==undefined?pro as Progression:null;
-
 
   const updateType = (value) => {
     setType(value)
+    findChords(value)
   }
-
   
-  function findChords() {
-    if(progression===undefined) {return []}
+  // console.log(chordsselected);
+  function findChords(newType) {
+
+    if(progression===null) {return []}
     const proChords = [];
-    progression.chords.forEach(chord => {
-      const cho = chords.filter(c => c.key.name==chord.key && c.scale.short==chord.scale && c.type.short==type);
+    progression.chordsCollection.items.forEach(chord => {
+      const cho = chords.filter(c => c.key.name==chord.key.name && c.scale.short==chord.scale.short && c.type.short==newType);
 
       if(cho.length>0) {
         proChords.push(cho);
       }
     });
 
-    setChords(proChords);
+    if(chordsselected!==proChords) {
+      setChords(proChords);
+    }
+    // chordsselected = proChords;
   }
 
   return (
