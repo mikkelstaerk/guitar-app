@@ -19,18 +19,12 @@ export default function Page({ params }: { params: { slug: string } }) {
   let chords = [];
   getData().then(data => {
     chords = data.chordCollection.items;
-    // console.log(chords);
     findChords();
   });
 
   const pro = progressions.find(p => p.date === params.slug);
   const progression:Progression = pro!==undefined?pro as Progression:null;
 
-   
-  if(progression!=null) {
-    // setKey(progression.key);
-    // setScale(progression.scale);
-  }
 
   const updateType = (value) => {
     setType(value)
