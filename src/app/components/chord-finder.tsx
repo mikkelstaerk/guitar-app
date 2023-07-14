@@ -22,7 +22,6 @@ export default  function ChordFinder(props) {
 
   const findChords = () => {
     const allChords:Chord[] = chords.filter(c => c.key.name==key && c.scale.short==scale && c.type.short==type) as Chord[];
-    
     setChords(allChords);
   }
 

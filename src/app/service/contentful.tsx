@@ -10,7 +10,10 @@ const client = new ApolloClient({
   headers: {
       authorization: `Bearer ${token}`,
   },
-  cache: new InMemoryCache(),
+  cache: new InMemoryCache({
+    resultCaching:false,
+    addTypename:false
+    }),
 });
 
 async function getProgressions() {
